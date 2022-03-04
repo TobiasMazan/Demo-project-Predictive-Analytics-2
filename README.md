@@ -11,7 +11,7 @@ __2. Objectives__
 
 __3. Data cleaning and preparation__
 
-__4. Exploratory Data Analysis (EDA)__
+_3.1. Exploratory Data Analysis (EDA)_
 
 ![image](https://user-images.githubusercontent.com/99291264/156817243-e011645f-5f30-44c6-b1af-ef1781d5519a.png)
 
