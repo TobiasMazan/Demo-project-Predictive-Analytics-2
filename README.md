@@ -20,6 +20,8 @@ __4. Exploratory Data Analysis (EDA)__
 
 __5. Predictive Modelling__
 
+_5.1. Baseline models_
+
 ![image](https://user-images.githubusercontent.com/99291264/156817828-951154a0-96be-4c6b-b01c-553b8fe187bb.png)
 
 ![image](https://user-images.githubusercontent.com/99291264/156818505-9ed5d2c6-762b-476c-86b2-6de158302a67.png)
