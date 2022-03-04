@@ -17,12 +17,13 @@ __4. Exploratory Data Analysis (EDA)__
 
 ![image](https://user-images.githubusercontent.com/99291264/156817618-6d07a95b-e459-44d5-95fc-18d410ce2898.png)
 
-Fig.2.
-
 
 __5. Predictive Modelling__
 
 ![image](https://user-images.githubusercontent.com/99291264/156817828-951154a0-96be-4c6b-b01c-553b8fe187bb.png)
+
+![image](https://user-images.githubusercontent.com/99291264/156818505-9ed5d2c6-762b-476c-86b2-6de158302a67.png)
+
 
 
 __6. Conlusions__
