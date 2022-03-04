@@ -16,6 +16,7 @@ __4. Exploratory Data Analysis (EDA)__
 ![image](https://user-images.githubusercontent.com/99291264/156817243-e011645f-5f30-44c6-b1af-ef1781d5519a.png)
 
 ![image](https://user-images.githubusercontent.com/99291264/156817618-6d07a95b-e459-44d5-95fc-18d410ce2898.png)
+
 Fig.2.
 
 
