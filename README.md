@@ -17,6 +17,9 @@ __4. Exploratory Data Analysis (EDA)__
 
 ![image](https://user-images.githubusercontent.com/99291264/156817618-6d07a95b-e459-44d5-95fc-18d410ce2898.png)
 
+![image](https://user-images.githubusercontent.com/99291264/156820634-547cfdb3-96f9-4439-87f7-c82758bbf32d.png)
+
+
 
 __5. Predictive Modelling__
 
