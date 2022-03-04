@@ -13,6 +13,9 @@ __3. Data cleaning and preparation__
 
 __4. Exploratory Data Analysis (EDA)__
 
+![image](https://user-images.githubusercontent.com/99291264/156817243-e011645f-5f30-44c6-b1af-ef1781d5519a.png)
+
+
 __5. Predictive Modelling__
 
 __6. Conlusions__
