@@ -26,6 +26,6 @@ _5.1. Baseline models_
 
 ![image](https://user-images.githubusercontent.com/99291264/156818505-9ed5d2c6-762b-476c-86b2-6de158302a67.png)
 
-
+![image](https://user-images.githubusercontent.com/99291264/156819345-5d9faee5-9466-491a-a2b4-41482feda4df.png)
 
 __6. Conlusions__
