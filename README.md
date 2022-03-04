@@ -22,4 +22,7 @@ Fig.2.
 
 __5. Predictive Modelling__
 
+![image](https://user-images.githubusercontent.com/99291264/156817828-951154a0-96be-4c6b-b01c-553b8fe187bb.png)
+
+
 __6. Conlusions__
