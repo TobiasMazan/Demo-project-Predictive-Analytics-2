@@ -15,7 +15,7 @@ Original data has been taken from Kaggle competition resource: https://www.kaggl
 
 _2.2. Exploratory Data Analysis (EDA)_
 
-Correlation heatmap revealed several variables likely to have predictive power for 'count' of customers using the PBS system. It also shows strong multicolinearity in a case of 'temp' (real temperature) and 'atemp' (apparent temperature):    
+Loaded dataset has 11 dimensions and about 11k datapoints. Correlation heatmap revealed several variables likely to have predictive power for 'count' of customers using the PBS system. It also shows strong multicolinearity in a case of 'temp' (real temperature) and 'atemp' (apparent temperature):    
 
 ![image](https://user-images.githubusercontent.com/99291264/156817243-e011645f-5f30-44c6-b1af-ef1781d5519a.png)
 
@@ -48,7 +48,6 @@ Random forest model consistently shows the best results. In an example run linea
 Prediction visualizations between response and predictor variables confirm validity of the selected random forrest baseline model. Despite predictive power of each individual predictor variable is limited by multivariable nature of the analyzed problem, both the predicted magnitude and relationship shape are close to observation:  
 
 
-
 ![image](https://user-images.githubusercontent.com/99291264/156817828-951154a0-96be-4c6b-b01c-553b8fe187bb.png)
 
 ![image](https://user-images.githubusercontent.com/99291264/156818505-9ed5d2c6-762b-476c-86b2-6de158302a67.png)
@@ -62,5 +61,11 @@ In order to further improve quality of the baseline model _feature selection_ an
 Performing feature selection _for_ loop invoking _SelectKBest_ filtering method have been initiated. Number of predictor variables (features) k=3 consistently showed to minimize root mean squared error (RMSE). Therefore, the training dataset has been transformed accordingly and least predictive variable according to the method ('windspeed') has been removed. 
 
 Then the hyperparameter tuning has been performed using transformed dataset, cross validation grid search (_GridSearchCV_) and custom scoring function. Finally, best model has been found for hyperparameters- {'max_depth': 4, 'max_features': 'auto', 'n_estimators': 400} beating the null model by 36%.
+
+_3.3. Model deployment and utilization_
+
+The best performing model has been deployed as an independent application using _pickle.dump_ method. Then it has been loaded back in order to make predictions.
+
+
 
 __4. Conclusions__
