@@ -43,10 +43,7 @@ _3.1. Baseline models_
 
 Model response (target) variable ('count') as well as predictor variables ('temp', 'humidity', 'windspeed', 'weather') have been defined. Train-test split and then basic linear regression and random forrest models have been initiated and trained. As a null model prediction of mean 'count' for each data point has been taken. Root mean squared error (RMSE) has been used as model error metric. 
 
-Random forest model consistently shows the best results. In an example run linear regression beats null model by 14% and random forrest beats it by over 16%:
-nullRMSE is 181.1361335742659
-lrRMSE is 155.21044274720458
-rfRMSE is 151.62172007098377
+Random forest model consistently shows the best results. In an example run linear regression beats null model by 14% and random forrest beats it by over 16%.
 
 Prediction visualizations between response and predictor variables confirm validity of the selected random forrest baseline model. Despite predictive power of each individual predictor variable is limited by multivariable nature of the analyzed problem, both the predicted magnitude and relationship shape are close to observation:  
 
