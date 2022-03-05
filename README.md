@@ -19,7 +19,7 @@ Loaded dataset has 11 dimensions and about 11k datapoints. Correlation heatmap r
 
 ![image](https://user-images.githubusercontent.com/99291264/156817243-e011645f-5f30-44c6-b1af-ef1781d5519a.png)
 
-The scatter for temperature versus customer count is considerable, yet both correlation coefficient and causal link indicate a positive relationship:
+As an example, the scatter for temperature versus customer count is considerable, yet both correlation coefficient and causal link indicate a positive relationship:
 
 ![image](https://user-images.githubusercontent.com/99291264/156817618-6d07a95b-e459-44d5-95fc-18d410ce2898.png)
 
