@@ -37,11 +37,9 @@ Resulting cleaned dataset is as follows:
 
 ![image](https://user-images.githubusercontent.com/99291264/156821452-e4ec37ab-8639-459e-97c0-65048ac9c40e.png)
 
+__4. Predictive Modelling__
 
-
-__5. Predictive Modelling__
-
-_5.1. Baseline models_
+_4.1. Baseline models_
 
 ![image](https://user-images.githubusercontent.com/99291264/156817828-951154a0-96be-4c6b-b01c-553b8fe187bb.png)
 
