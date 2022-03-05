@@ -9,13 +9,13 @@ Of particular interest has been identification of conditions in which traffic wo
 
 __2. Data collection and preparation__
 
-_3.1. Data collection_
+_2.1. Data collection_
 
 Original data has been taken from Kaggle competition resource: https://www.kaggle.com/c/bike-sharing-demand/data
 
-_3.2. Exploratory Data Analysis (EDA)_
+_2.2. Exploratory Data Analysis (EDA)_
 
-Correlation heatmap revealed several variables likely to have predictive value for 'count' of customers using the PBS system. It also shows strong multicolinearity in a case of 'temp' (real temperature) and 'atemp' (apparent temperature):    
+Correlation heatmap revealed several variables likely to have predictive power for 'count' of customers using the PBS system. It also shows strong multicolinearity in a case of 'temp' (real temperature) and 'atemp' (apparent temperature):    
 
 ![image](https://user-images.githubusercontent.com/99291264/156817243-e011645f-5f30-44c6-b1af-ef1781d5519a.png)
 
@@ -23,7 +23,7 @@ The scatter for temperature versus customer count is considerable, yet both corr
 
 ![image](https://user-images.githubusercontent.com/99291264/156817618-6d07a95b-e459-44d5-95fc-18d410ce2898.png)
 
-_3.3. Data cleaning_
+_2.3. Data cleaning_
 
 In order to prepare data for further analysis following actions have been performed:
   * Elimination of data points with missing values for 'count' variable,
@@ -37,9 +37,18 @@ Resulting cleaned dataset is as follows:
 
 ![image](https://user-images.githubusercontent.com/99291264/156821452-e4ec37ab-8639-459e-97c0-65048ac9c40e.png)
 
-__4. Predictive Modelling__
+__3. Predictive Modelling__
 
-_4.1. Baseline models_
+_3.1. Baseline models_
+
+Model response (target) variable ('count') as well as predictor variables ('temp','humidity','windspeed','weather') have been defined. Train-test split and then simple linear regression and random forrest models have been initiated and trained. As a null model prediction of mean 'count' for each data point has been taken. Root mean squared error (RMSE) has been used as model error metric. 
+
+Random forest model consistently shows the best results. In an example run linear regression beats null model by 14% and random forrest beats it by over 16%:
+nullRMSE is 181.1361335742659
+lrRMSE is 155.21044274720458
+rfRMSE is 151.62172007098377
+
+Prediction visualizations between response and predictor variables confirm validity of the selected random forrest baseline model. Despite predictive power of each individual predictor variable is limited by multivariable nature of the analyzed problem, both the predicted magnitude and relationship shape are close to observation:  
 
 ![image](https://user-images.githubusercontent.com/99291264/156817828-951154a0-96be-4c6b-b01c-553b8fe187bb.png)
 
