@@ -58,7 +58,7 @@ _3.2. Model optimization_
 
 In order to further improve quality of the baseline model _feature selection_ and _hyperparameter tuning_ methods have been employed. 
 
-Performing feature selection _for_ loop invoking _SelectKBest_ filtering method have been initiated. Number of predictor variables (features) k=3 consistently showed to minimize root mean squared error (RMSE). Therefore, the training dataset has been transformed accordingly and least predictive variable according to the method ('windspeed') has been removed. 
+Performing feature selection _for_ loop invoking _SelectKBest_ filtering method has been initiated. Number of predictor variables (features) k=3 consistently showed to minimize root mean squared error (RMSE). Therefore, the training dataset has been transformed accordingly and least predictive variable according to the method ('windspeed') has been removed. 
 
 Then the hyperparameter tuning has been performed using transformed dataset, cross validation grid search (_GridSearchCV_) and custom scoring function. Finally, best model has been found for hyperparameters- {'max_depth': 4, 'max_features': 'auto', 'n_estimators': 400} beating the null model by 36%.
 
