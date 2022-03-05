@@ -66,6 +66,15 @@ _3.3. Model deployment and utilization_
 
 The best performing model has been deployed as an independent application using _pickle.dump_ method. Then it has been loaded back in order to make predictions.
 
+For the purpose of this exercise it is assumed that maintenance cannot be performed in temperature below 14 Celsius and in rainy or snowy conditions. Furthermore, the maximum traffic suitable for maintenance has been set to 150.
 
+Coldest month in Washington, D.C that typically allows for maintenance is then April with daily mean temperature of 14.6 Celsius. Inserting this value into to the model it can be seen that for clear weather with few clouds humidity must go over 72 to consistently output demand of less than 150 customers. For July with daily mean temperature of 27.2 Celsius the same is true at humidity of 83. 
+
+_3.4. Future work_
+
+One way to further improve the model would be feature engineering of string variable 'datetime' in order to extract boolean value day vs. night. This would improve the signal 
+of meteorological data and allow for better predictions of demand during daylight. Furthermore, full (T, RH) space should be mapped to see all coordinates yielding demand below assumed threshold. 
 
 __4. Conclusions__
+
+Approach taken here achieved 36% improvement compared to null model and good prediction curve shape fidelity. This suggests that ML model deployed as an independent application can, with few improvements, reasonably output maintenace feasibility at any given day with clear weather based on temperature and humidity data only. 
