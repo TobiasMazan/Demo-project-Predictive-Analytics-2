@@ -43,9 +43,10 @@ _3.1. Baseline models_
 
 Model response (target) variable ('count') as well as predictor variables ('temp', 'humidity', 'windspeed', 'weather') have been defined. Train-test split and then basic linear regression and random forrest models have been initiated and trained. As a null model prediction of mean 'count' for each data point has been taken. Root mean squared error (RMSE) has been used as model error metric. 
 
-Random forest model consistently shows the best results. In an example run linear regression beats null model by 14% and random forrest beats it by over 16%.
+Random forest model consistently shows the best results. In an example run linear regression beats null model by 14% and random forrest beats it by 17%.
 
 Prediction visualizations between response and predictor variables confirm validity of the selected random forrest baseline model. Despite predictive power of each individual predictor variable is limited by multivariable nature of the analyzed problem, both the predicted magnitude and relationship shape are close to observation:  
+
 
 ![image](https://user-images.githubusercontent.com/99291264/156817828-951154a0-96be-4c6b-b01c-553b8fe187bb.png)
 
@@ -53,4 +54,12 @@ Prediction visualizations between response and predictor variables confirm valid
 
 ![image](https://user-images.githubusercontent.com/99291264/156819345-5d9faee5-9466-491a-a2b4-41482feda4df.png)
 
-__6. Conclusions__
+_3.2. Model optimization_
+
+In order to further improve quality of the baseline model _feature selection_ and _hyperparameter tuning_ methods have been employed. 
+
+Performing feature selection _for_ loop invoking _SelectKBest_ filtering method have been initiated. Number of predictor variables (features) k=3 consistently showed to minimize root mean squared error (RMSE). Therefore, the training dataset has been transformed accordingly and least predictive variable according to the method ('windspeed') has been removed. 
+
+Then the hyperparameter tuning has been performed using transformed dataset, cross validation grid search (_GridSearchCV_) and custom scoring function. Finally, best model has been found for hyperparameters- {'max_depth': 4, 'max_features': 'auto', 'n_estimators': 400} beating the null model by 36%.
+
+__4. Conclusions__
