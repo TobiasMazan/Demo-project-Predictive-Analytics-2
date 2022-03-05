@@ -30,7 +30,7 @@ In order to prepare data for further analysis following actions have been perfor
   * Replacing incorrect values (customer count < 0) with mean value in a dataset, 
   * Removing duplicates based on 'datetime' variable,
   * Removing redundant variables: those that constitute output rather than input ('registered','casual'), those that are not meteorological
-    ('datetime','season','holiday','workingday') and those that show strong dependency on another variable in a dataset ('atemp'- real temperature 
+    ('datetime', 'season', 'holiday', 'workingday') and those that show strong dependency on another variable in a dataset ('atemp'- real temperature 
     considered primary to apparent temperature)      
 
 Resulting cleaned dataset is as follows:
