@@ -5,7 +5,7 @@ __1. Project overview__
 Public bicycle sharing (PBS) systems are the means of renting bicycles where the process of obtaining membership, rental, and bike return is automated via a network of kiosk locations throughout a city. Using these systems, people are able rent a bicycle from a one location and return it to a different place on an as-needed basis. Maintenance work in continuously functioning system such as PBS would require either shuting down the system for a period of time or performing work interupting the normal bicycle sharing usage- both at risk of customer dissatisfaction. The latter effect can be avoided with better maintenance planning utilizing methods of predictive modelling.   
 
 In this demo exercise purpose has been to predict demand for PBS system services in Washington, D.C depending on meteorological data.
-Of particular interest has been identification of conditions in which traffic would be low enough and weather mild enough to allow for PBS system maintenance. Solution utilized data analysis/ML libraries: pandas, matplotlib, numpy, sklearn, seaborn, pickle. 
+Of particular interest has been identification of conditions in which traffic would be low enough and weather mild enough to allow for PBS system maintenance. Solution utilized Jupyter Notebook and data analysis/ML libraries: pandas, matplotlib, numpy, sklearn, seaborn, pickle. 
 
 __2. Data collection and preparation__
 
