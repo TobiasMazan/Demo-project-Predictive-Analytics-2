@@ -1,4 +1,4 @@
-# Demand forecast demo project
+# PBS demand forecast (demo project)
 
 __1. Project overview__
 
