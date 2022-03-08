@@ -1,4 +1,4 @@
-# Demand-forecast-demo-project
+# Demand forecast demo project
 
 __1. Project overview__
 
