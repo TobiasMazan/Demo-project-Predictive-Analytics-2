@@ -64,11 +64,9 @@ Performing feature selection _for_ loop invoking _SelectKBest_ filtering method 
 
 Then the hyperparameter tuning has been performed on a local machine using transformed dataset, cross validation grid search (_GridSearchCV_) and custom scoring function. Finally, best model has been found for hyperparameters- {'max_depth': 4, 'max_features': 'auto', 'n_estimators': 400} beating the null model by 36%.
 
-Furthermore, an automated _Azure Machine Learning_ run has been performed in which 42 different ML algorithms has been tried and tuned on a cloud compute cluster. The best performing _stack ensemble regressor_ combined 4 gradient boosting models to achieve 76% improvement over the null model. It parsed string variable 'datetime' in order to extract period of a day dependency. This improved the signal of meteorological data and allowed for better predictions of demand during daylight.
-
 _3.3. Model deployment and utilization_
 
-The best performing local machine model has been deployed as offline application using _pickle.dump_ method. Then it has been loaded back in order to make predictions. The best performing compute cluster model has been deployed as _container REST endpoint_.
+The best performing local has been deployed as offline application using _pickle.dump_ method. Then it has been loaded back in order to make predictions. 
 
 For the purpose of this exercise it is assumed that maintenance cannot be performed in temperature below 14 Celsius and in rainy or snowy conditions. Furthermore, the maximum traffic suitable for maintenance has been set to 150.
 
@@ -76,14 +74,12 @@ Coldest month in Washington, D.C that typically allows for maintenance is then A
 
 _3.4. Future work_
 
-Full (T, RH) space could be mapped to see all coordinates yielding demand below assumed threshold. 
+An automated _Azure Machine Learning_ dummy run has been performed on a raw dataset in which 42 different ML algorithms has been tried and tuned on a cloud compute cluster. The best performing _stack ensemble regressor_ combined 4 gradient boosting models. It parsed string variable 'datetime' in order to extract period of a day dependency. This improved the signal of meteorological data and allowed for better predictions of demand during daylight. In order to improve predictive power further this method should be used on a feature filtered dataset (as decribed above). Morever, full (T, RH) space could be mapped to see all coordinates yielding demand below assumed threshold. 
 
 __4. Conclusions__
 
-Approach taken here achieved 36% (local machine) to 76% (compute cluster) improvement compared to null model and good prediction curve shape fidelity. This suggests that ML model deployed as an independent application can, with few improvements, reasonably output maintenance feasibility at any given day with clear weather based on temperature and humidity data only. 
+Approach taken here achieved 36% improvement compared to null model and good prediction curve shape fidelity. This suggests that ML model deployed as an independent application can, with few improvements, reasonably output maintenance feasibility at any given day with clear weather based on temperature and humidity data only. 
 
 __Resources__
 
 Jupyter notebook with code: https://github.com/TobiasMazan/Demand-forecast-demo-project/blob/main/PBS%20Demand%20Prediction.ipynb
-
-REST endpoint: http://e8c03396-7de0-4da9-8dcd-5d6026c8e1c5.northeurope.azurecontainer.io/score
