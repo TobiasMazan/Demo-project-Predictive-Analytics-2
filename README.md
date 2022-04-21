@@ -68,7 +68,7 @@ _3.3. Model deployment and utilization_
 
 The best performing local has been deployed as offline application using _pickle.dump_ method. Then it has been loaded back in order to make predictions. 
 
-For the purpose of this exercise it is assumed that maintenance cannot be performed in temperature below 14 Celsius and in rainy or snowy conditions. Furthermore, the maximum traffic suitable for maintenance has been set to 150.
+For the purpose of this exercise it is assumed that maintenance cannot be performed in temperature below 14 Celsius and in rainy/snowy conditions or at night. Furthermore, the maximum traffic suitable for maintenance has been set to 150.
 
 Coldest month in Washington, D.C that typically allows for maintenance is then April with daily mean temperature of 14.6 Celsius. Inserting this value into the model it can be seen that for clear weather with few clouds humidity must go over 72 to consistently output demand of less than 150 customers. For July with daily mean temperature of 27.2 Celsius the same is true at humidity of 83. 
 
