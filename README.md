@@ -5,7 +5,9 @@ __1. Project overview__
 Public bicycle sharing (PBS) systems are the means of renting bicycles where the process of obtaining membership, rental, and bike return is automated via a network of kiosk locations throughout a city. Using these systems, people are able rent a bicycle from a one location and return it to a different place on an as-needed basis. Maintenance work in continuously functioning system such as PBS would require either shuting down the system for a period of time or performing work interupting the normal bicycle sharing usage- both at risk of customer dissatisfaction. The latter effect can be avoided with better maintenance planning utilizing methods of predictive modelling.   
 
 In this demo exercise purpose has been to predict demand for PBS system services in Washington, D.C depending on meteorological data.
-Of particular interest has been identification of conditions in which traffic would be low enough and weather mild enough to allow for PBS system maintenance. Solution utilized Jupyter Notebook/Azure Machine Learning; ML algorithms: Multiple Linear Regression, Random Forest, Gradient Boosting Stack Ensemble and data analysis libraries: pandas, matplotlib, numpy, sklearn, seaborn, pickle. 
+Of particular interest has been identification of conditions in which traffic would be low enough and weather mild enough to allow for PBS system maintenance. 
+
+Solution utilized Jupyter Notebook/Azure Machine Learning; ML algorithms: multiple linear regression, random forest, gradient boosting stack ensemble and data analysis libraries: pandas, matplotlib, numpy, sklearn, seaborn, pickle. 
 
 __2. Data collection and preparation__
 
@@ -62,7 +64,7 @@ Performing feature selection _for_ loop invoking _SelectKBest_ filtering method 
 
 Then the hyperparameter tuning has been performed on a local machine using transformed dataset, cross validation grid search (_GridSearchCV_) and custom scoring function. Finally, best model has been found for hyperparameters- {'max_depth': 4, 'max_features': 'auto', 'n_estimators': 400} beating the null model by 36%.
 
-Furthermore, an automated _Azure Machine Learning_ run has been performed in which 42 different ML algorithms has been tried and tuned on a cloud compute cluster. The best performing _Stack Ensemble Regressor_ combined 4 gradient boosting models to achieve 76% improvement over the null model. It parsed string variable 'datetime' in order to extract period of a day dependency. This improved the signal of meteorological data and allowed for better predictions of demand during daylight.
+Furthermore, an automated _Azure Machine Learning_ run has been performed in which 42 different ML algorithms has been tried and tuned on a cloud compute cluster. The best performing _stack ensemble regressor_ combined 4 gradient boosting models to achieve 76% improvement over the null model. It parsed string variable 'datetime' in order to extract period of a day dependency. This improved the signal of meteorological data and allowed for better predictions of demand during daylight.
 
 _3.3. Model deployment and utilization_
 
@@ -83,4 +85,5 @@ Approach taken here achieved 36% (local machine) to 76% (compute cluster) improv
 __Resources__
 
 Jupyter notebook with code: https://github.com/TobiasMazan/Demand-forecast-demo-project/blob/main/PBS%20Demand%20Prediction.ipynb
+
 REST endpoint: http://e8c03396-7de0-4da9-8dcd-5d6026c8e1c5.northeurope.azurecontainer.io/score
