@@ -47,7 +47,7 @@ Model response (target) variable ('count') as well as predictor variables ('temp
 
 Random forest model consistently shows the best results. In an example run linear regression beats null model by 14% and random forrest beats it by 17%.
 
-Prediction visualizations between response and predictor variables confirm validity of the selected random forrest baseline model. Despite predictive power of each individual predictor variable is limited by multivariable nature of the analyzed problem, both the predicted magnitude and relationship shape are close to observation:  
+Prediction visualizations between response and predictor variables confirm validity of the selected random forrest baseline model. Despite predictive power of each individual predictor variable is limited by multivariable nature of the analyzed problem, both the predicted magnitude and relationship shape are generally close to observation:  
 
 
 ![image](https://user-images.githubusercontent.com/99291264/156817828-951154a0-96be-4c6b-b01c-553b8fe187bb.png)
