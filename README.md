@@ -1,4 +1,4 @@
-# Demand forecast demo project
+# Demo project: Predictive Analytics (Demand forecast)
 
 __1. Project overview__
 
