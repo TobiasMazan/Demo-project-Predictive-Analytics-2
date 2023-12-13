@@ -7,7 +7,7 @@ Public bicycle sharing (PBS) systems are the means of renting bicycles where the
 In this demo exercise purpose has been to predict demand for PBS system services in Washington, D.C depending on meteorological data.
 Of particular interest has been identification of conditions in which traffic would be low enough and weather mild enough to allow for PBS system maintenance. 
 
-Solution utilized Jupyter Notebook/Azure Machine Learning; ML algorithms: multiple linear regression, random forest, gradient boosting stack ensemble and data analysis libraries: pandas, matplotlib, numpy, sklearn, seaborn, pickle. 
+Solution utilized Jupyter Notebook/Azure Machine Learning; ML algorithms: multiple linear regression, random forest, gradient boosting stack ensemble and data analysis libraries: pandas, matplotlib, numpy, sklearn, seaborn, pickle.
 
 __2. Data collection and preparation__
 
@@ -82,4 +82,4 @@ Approach taken here achieved 36% improvement compared to null model and good pre
 
 __Resources__
 
-Jupyter notebook with code: https://github.com/TobiasMazan/Demand-forecast-demo-project/blob/main/PBS%20Demand%20Prediction.ipynb
+Jupyter notebook with code: https://github.com/TobiasMazan/Demand-forecast-demo-project/blob/main/PBS%20Demand%20Prediction.ipynb.
